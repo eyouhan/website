@@ -222,7 +222,7 @@ the Linux only `RunAsUser` option with Windows Pods.
 -->
 总体而言，为容器授予访问宿主系统的权限这种做法是不推荐的，因为这样做可能会打开潜在的安全性攻击之门。
 
-在创建 Windows Pod 时，如过在其 `SecurityContext` 中设置了 `RunAsUser`，
+在创建 Windows Pod 时，如果在其 `SecurityContext` 中设置了 `RunAsUser`，
 Pod 会一直阻塞在 `ContainerCreating` 状态。因此，建议不要在 Windows
 节点上使用仅针对 Linux 的 `RunAsUser` 选项。
 {{< /note >}}
